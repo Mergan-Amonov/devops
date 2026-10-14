@@ -1,0 +1,10 @@
+name: CI
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  pipeline:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Say hello
+      run: echo "hello from my first pipeline!"
